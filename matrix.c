@@ -1,7 +1,7 @@
 #include<stdio.h>
 #include "head.h"
-
-void PrintSpiral(int n,int A[n][n])
+//void PrintSpiral(int n,int A[n][n])
+/*void PrintSpiral(int n,int A[n][n])
 {
 int t,b,l,r,dir;
 t=0;
@@ -81,5 +81,30 @@ for(i=n*n;i>=0;i--)
 {
 printf("%d ",x[i]);
 }
+}*/
+
+void main()
+{
+int n;
+printf("Enter the value of for a nxn matrix");
+scanf("%d",&n);
+
+int A[n][n];
+
+printf("\nenter the elements in a matrix");
+int i=0,j=0;
+
+for(i=0;i<n;i++)
+{
+	for(j=0;j<n;j++)
+{
+ scanf("%d",&A[i][j]);
 }
+}
+
+PrintSpiral(n,A);
+
+}
+
+
 
